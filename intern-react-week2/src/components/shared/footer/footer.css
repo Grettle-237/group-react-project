@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #bbb;
+    font-size: 14px;
+    margin-top: 40px;
+}

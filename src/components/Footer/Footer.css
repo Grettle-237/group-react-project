@@ -1,0 +1,148 @@
+.footer {
+  color: var(--white);
+  margin-top: 40px;
+}
+
+.footer__wave {
+  display: block;
+  width: 100%;
+  height: 56px;
+  color: var(--green-dark);
+  margin-bottom: -1px;
+}
+
+.footer__body {
+  background: var(--green-dark);
+  padding: 8px 48px 22px;
+}
+
+.footer__content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer__name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.footer__tagline {
+  margin: 2px 0 0;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  font-size: 0.78rem;
+}
+
+.footer__nav a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 0 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  transition: color 0.2s;
+}
+
+.footer__nav a:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.footer__nav a:hover,
+.footer__nav a:focus-visible {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.footer__social {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  margin: 2px 0 0;
+  padding: 0;
+}
+
+.footer__social a {
+  color: var(--white);
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 50%;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footer__social a:hover,
+.footer__social a:focus-visible {
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.footer a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.footer__right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-left: 32px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  min-height: 80px;
+}
+
+.footer__icon {
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+}
+
+.footer__message {
+  margin: 0;
+  max-width: 170px;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.footer__copy {
+  margin: 18px 0 0;
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 720px) {
+  .footer__body { padding: 8px 24px 20px; }
+
+  .footer__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__right {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 18px 0 0;
+    width: 100%;
+  }
+}

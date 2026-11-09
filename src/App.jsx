@@ -1,6 +1,16 @@
 import React from 'react';
 import MealPlannerPage from './pages/MealPlanner';
+import Card from './pages/Card';
 
-export default function App() {
-  return <MealPlannerPage />;
+
+ function App() {
+ 
+  return(
+  
+  <><Card/>;
+  <MealPlannerPage />;
+   
+   </>
+  );
 }
+export default App;

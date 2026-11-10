@@ -1,16 +1,7 @@
-import React from 'react';
+import Header from './components/Header/Header.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import MealPlannerPage from './pages/MealPlanner';
-import Card from './pages/Card';
 
-
- function App() {
- 
-  return(
-  
-  <><Card/>;
-  <MealPlannerPage />;
-   
-   </>
-  );
+export default function App() {
+  return <MealPlannerPage />;
 }
-export default App;
